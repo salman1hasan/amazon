@@ -1,7 +1,9 @@
 import Image from "next/image"
 import logo from "../../images/logo.png"
+import cartIcon from "../../images/cartIcon.png"
 import { SlLocationPin } from "react-icons/sl";
 import { HiOutlineSearch } from "react-icons/hi";
+import {BiCaretDown} from "react-icos/bi"
 
 
 
@@ -30,9 +32,23 @@ const Header =() =>{
       <HiOutlineSearch/>
       </span>
     </div>
-    <div>
-      <p>Hello,signin</p>
+    <div className="text-xs text-gray-100 flex flex-col justify-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%]">
+      <p>Hello,sign in</p>
+      <p className="text-white font-bold flex items-center">
+        Accounts & Lists{" "}
+        <span>
+          <BiCaretDown/>
+        </span>
+      </p>
     </div>
+      <div className="text-xs text-gray-100 flex flex-col justify-center">
+        <p>Marked</p>
+        <p className="text-white font-bold">& Favorite</p>
+      </div>
+
+      <div className="flex items-center px-2">
+        <Image className="w-auto object-cover h-8" src={cartIcon} alt="cartImg"/>
+      </div>
     </div>
     </div>
     )
