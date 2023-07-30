@@ -3,7 +3,7 @@ import logo from "../../images/logo.png"
 import cartIcon from "../../images/cartIcon.png"
 import { SlLocationPin } from "react-icons/sl";
 import { HiOutlineSearch } from "react-icons/hi";
-import {BiCaretDown} from "react-icos/bi"
+import {BiCaretDown} from "react-icons/bi"
 
 
 
@@ -32,7 +32,7 @@ const Header =() =>{
       <HiOutlineSearch/>
       </span>
     </div>
-    <div className="text-xs text-gray-100 flex flex-col justify-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%]">
+    <div className="text-xs text-gray-100 flex flex-col justify-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%] ">
       <p>Hello,sign in</p>
       <p className="text-white font-bold flex items-center">
         Accounts & Lists{" "}
@@ -41,13 +41,15 @@ const Header =() =>{
         </span>
       </p>
     </div>
-      <div className="text-xs text-gray-100 flex flex-col justify-center">
+      <div className="text-xs text-gray-100 flex flex-col justify-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%] relative"
+        >
         <p>Marked</p>
         <p className="text-white font-bold">& Favorite</p>
       </div>
 
       <div className="flex items-center px-2">
         <Image className="w-auto object-cover h-8" src={cartIcon} alt="cartImg"/>
+        <p className="text-xs text-white font-bold mt-3">Cart</p>
       </div>
     </div>
     </div>
