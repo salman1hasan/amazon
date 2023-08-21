@@ -4,7 +4,7 @@ import cartIcon from "../../images/cartIcon.png"
 import { SlLocationPin } from "react-icons/sl";
 import { HiOutlineSearch } from "react-icons/hi";
 import {BiCaretDown} from "react-icons/bi"
-
+import Link from "next/link";
 
 
 const Header =() =>{
@@ -47,12 +47,12 @@ const Header =() =>{
         <p className="text-white font-bold">& Favorite</p>
       </div>
 
-      <div className="flex items-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%] relative">
+      <Link href={'/cart'} className="flex items-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%] relative">
         <Image className="w-auto object-cover h-8" src={cartIcon} alt="cartImg"/>
         <p className="text-xs text-white font-bold mt-3">Cart</p>
         <span className="absolute text-amazon_yellow text-xs top-2 left-[29px] font-semibold">0</span>
+        </Link>
       </div>
-    </div>
     </div>
     )
 }
